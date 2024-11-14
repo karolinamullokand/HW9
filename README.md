@@ -36,6 +36,7 @@ pred_model_ols2 <- (pred_vals_ols2 > mean(pred_vals_ols2))
 table(pred = pred_model_ols2, true = trad_data$he_more_than_5yrs_than_her)
 Result: The model is capturing both true positives and true negatives but has a 
 high false positive rate, which impacts the models accuracy.
+```
 
 ```
 # 2
