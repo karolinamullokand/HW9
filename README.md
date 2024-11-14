@@ -95,6 +95,6 @@ pred_vals_logit_reduced <- predict(model_logit_reduced, trad_data, type = "respo
 # cutoff 0.25
 pred_model_logit_reduced <- (pred_vals_logit_reduced > 0.25)
 table(pred = pred_model_logit_reduced, true = trad_data$he_more_than_5yrs_than_her)
-
-Result: Including 'poverty' adds a small increase in the models ability to predict the age gap.
 ```
+
+__Result:__ Including 'poverty' adds a small increase in the models ability to predict the age gap.
