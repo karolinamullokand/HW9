@@ -76,8 +76,11 @@ table(pred = pred_model_logit, true = trad_data$he_more_than_5yrs_than_her)
 
 #By adjusting the cutoff, I balanced true positives and false positives, aiming 
 for the best prediction accuracy.
+```
 
-#LEAVE OUT VARIABLES:
+# LEAVE OUT VARIABLES:
+
+```
 ols_out_reduced <- lm(he_more_than_5yrs_than_her ~ CITIZEN + YRSUSA1, data = trad_data)
 summary(ols_out_reduced)
 
